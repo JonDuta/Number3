@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="BigJ5_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-11 03:38:14 PM"/>
+        <attribute name="created" value="QmlnSjVfO0JJR0o1UEM7MjAyMC0xMC0xMTswMzoyNzoxOSBQTTsyMjUz"/>
+        <attribute name="edited" value="QmlnSjVfO0JJR0o1UEM7MjAyMC0xMC0xMTswMzozODoxNCBQTTsxOzIzNTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Length" type="Real" array="False" size=""/>
+            <declare name="Width" type="Real" array="False" size=""/>
+            <declare name="Area" type="String" array="False" size=""/>
+            <declare name="Perimeter" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter the length of the rectangle&quot;" newline="True"/>
+            <input variable="Length"/>
+            <output expression="&quot;Please enter the width of the rectangle&quot;" newline="True"/>
+            <input variable="Width"/>
+            <assign variable="Area" expression="ToFixed(Length * Width,2)"/>
+            <assign variable="Perimeter" expression="ToFixed(Length + Width,2)"/>
+            <output expression="&quot;The area of the rectangle is..&quot; &amp;Area&amp; ." newline="True"/>
+            <output expression="&quot;The perimeter of the rectangle is..&quot; &amp;Perimeter&amp; ." newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
